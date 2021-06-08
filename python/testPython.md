@@ -1,36 +1,15 @@
+# 객체지향 프로그래밍
 
 
-##### 상속(inheritance)
+```python
+class Bicycle():
 
-- class에서 이름 뒤에 괄호는 상속이다.  
-- python의 모든 객체는 object를 상속받는다.  
-- python3부터는 (object)는 생략가능하다. 즉 지금까지 class를 정의할 때 object를 내부적으로 상속하고 있었다.
-
-  
-                                                            * 상속을 사용하면 확장이 용이하며, 유지보수가 편해진다.
-
-
-
-
-
-```bash
-class Parent:
-    x = 'parent'
+    def move(self, speed):
+        print('자전거: 시속 {}킬로미터로 전진'.format(speed))
     
-    @classmethod
-    def output(cls):
-        return cls.x
+    def turn(self, direction):
+        print('자전거: {}회전'.foramt(direction))
     
-    @staticmethod
-    def prn():
-        return Parent.x
-    
-# Parent를 Child에 상속
-class Child(Parent):
-    x = 'child'
-    
-    def display(self):
-        print(Parent.output())
-        print(Child.output())
+    def stop(self):
+        print('자전거({}, {})'.foramt(self.wheel_size, self.color))
 ```
-
