@@ -13,3 +13,15 @@ class Bicycle():
     def stop(self):
         print('자전거({}, {})'.foramt(self.wheel_size, self.color))
 ```
+
+```python
+my_bicycle=Bicycle()
+
+my_bicycle.wheel_size=26
+my_bicycle.color='black'
+
+my_bicycle.move(30)
+my_bicycle.turn('좌')
+my_bicycle.stop()
+
+```
